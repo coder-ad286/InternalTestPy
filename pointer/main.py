@@ -1,0 +1,7 @@
+file=open("demo.txt","rb")
+print("Initial Position of File Pointer :",file.tell())
+print(file.read(10))
+print("Setting 4 bytes from the current position of file pointer :")
+file.seek(4,1)
+print(file.read())
+file.close()
